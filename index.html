@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Slide Nav.js</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<style>
+		.slider{}
+		.slider ._slide{}
+		.slider ._slide:nth-child(even){
+			background: #555;
+			color: #000;
+		}
+		.menu{
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 10;
+		}
+		.menu ul{}
+		.menu ul li{}
+	</style>
+</head>
+<body>
+	<div id="menu" class="menu">
+		<ul>
+			<li>slide 1</li>
+			<li>slide 2</li>
+			<li>slide 3</li>
+			<li>slide 4</li>
+		</ul>
+	</div>
+	<div class="slider">
+		<div class="_slide active" data-x='0'  data-y="0">Slide 1</div>
+		<div class="_slide" data-x='0'  data-y="1">Slide 2</div>
+		<div class="_slide" data-x='2'  data-y="2">Slide 3</div>
+		<div class="_slide" data-x='1' data-y="3">Slide 4</div>
+	</div>
+</body>
+</html>
