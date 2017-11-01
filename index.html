@@ -21,6 +21,11 @@
 		.menu ul{}
 		.menu ul li{}
 	</style>
+	<script>
+		$(function(){
+			$('.slider').slider()
+		})
+	</script>
 </head>
 <body>
 	<div id="menu" class="menu">
@@ -32,8 +37,8 @@
 		</ul>
 	</div>
 	<div class="slider">
-		<div class="_slide active" data-x='0'  data-y="0">Slide 1</div>
-		<div class="_slide" data-x='0'  data-y="1">Slide 2</div>
+		<div class="_slide active" data-x='0' data-y="0" data-w="1" data-h="0.5" >Slide 1</div>
+		<div class="_slide" data-x='1'  data-y="1" data-w=".5" data-h="0.7">Slide 2</div>
 		<div class="_slide" data-x='2'  data-y="2">Slide 3</div>
 		<div class="_slide" data-x='1' data-y="3">Slide 4</div>
 	</div>
